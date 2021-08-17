@@ -1,0 +1,26 @@
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+//import sections
+@import "_header.scss";
+@import "_hero.scss";
+@import "_footer.scss";
+

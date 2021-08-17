@@ -1,0 +1,94 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 67vh;
+
+    &__form { //form
+        position: relative;
+    }
+
+    &__search { //div
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__iconSearch { //label
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        color: #666666ab;
+        z-index: +1;
+    }
+
+    &__iconMic { //label
+        font-size: 22px;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        background: conic-gradient(from -45deg, #357dea 110deg, #f45742 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        }
+
+    &__searchField { //input
+        text-align: center;
+        font-size: 16px;
+        width: 30vw;
+        position: relative;
+        //z-index: -3;
+        height: 45px;
+        border-color: #6666663a;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        border: 1px solid #6666663a;
+        &:focus {
+            outline-width: 0;
+        }
+        @media (max-width: 700px) {
+            width: 90vw;  
+        }
+    }
+
+    &__buttons { //div
+        margin-top: 10px;
+    }
+
+    &__button { //button
+        color: #4e4e4e;
+        font-size: 15px;
+        background-color: #f3f3f34b;
+        border: 1px solid #f1f1f14f;
+        padding: 8px 10px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        margin: 0px 5px;
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #c7c7c7;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+    &__language { //p
+        margin-top: 24px;
+        font-size: 13px;
+        color: #4e4e4e;
+    }
+    &__languageLink { //a
+        color: rgb(2, 2, 141);
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+}
