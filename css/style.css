@@ -218,6 +218,12 @@ body {
   color: #808080;
 }
 
+@media (max-width: 450px) {
+  .footer__link {
+    padding: 0px 5px;
+  }
+}
+
 .footer__options {
   display: -webkit-box;
   display: -ms-flexbox;
